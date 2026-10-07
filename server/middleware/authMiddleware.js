@@ -10,7 +10,6 @@ const authMiddleware = (req, res, next) => {
   if (!token) {
     return res.status(401).json({ message: 'Authentication required' });
   }
-
   try {
     const secret = process.env.JWT_SECRET || 'replace_with_a_long_random_secret';
     const decoded = jwt.verify(token, secret);

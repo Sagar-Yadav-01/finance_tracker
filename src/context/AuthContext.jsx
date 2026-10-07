@@ -13,7 +13,7 @@ const getLocalRegistry = () => {
     return JSON.parse(localStorage.getItem('finance_local_user_registry') || '{}');
   } catch (e) {
     return {};
-  }
+  } 
 };
 
 const saveLocalUserInRegistry = (userObj, password, securityQuestions = null) => {

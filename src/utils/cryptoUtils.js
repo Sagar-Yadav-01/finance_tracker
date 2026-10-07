@@ -10,7 +10,6 @@ async function sha256(str) {
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
-
 /**
  * Generates a cryptographically random 16-character alphanumeric Recovery Key formatted as XXXX-XXXX-XXXX-XXXX
  */

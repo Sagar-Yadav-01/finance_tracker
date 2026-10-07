@@ -4,7 +4,6 @@ export const financeService = {
   initialize(userId) {
     storageAdapter.initialize(userId);
   },
-
   // Account operations
   async getAccounts() {
     return await storageAdapter.getAccounts();
