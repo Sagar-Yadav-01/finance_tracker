@@ -1,0 +1,24 @@
+{
+  "appId": "com.finance.tracker",
+  "appName": "Personal Finance Tracker",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "CapacitorSQLite": {
+      "iosIsEncryption": true,
+      "iosKeychainPrefix": "finance-tracker-vault",
+      "iosBiometric": {
+        "biometricAuth": true,
+        "biometricTitle": "Biometric Authentication"
+      },
+      "androidIsEncryption": true,
+      "androidBiometric": {
+        "biometricAuth": true,
+        "biometricTitle": "Biometric Authentication"
+      }
+    }
+  }
+}
