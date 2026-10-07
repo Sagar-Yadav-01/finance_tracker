@@ -4,7 +4,8 @@ import { hashPin, hashRecoveryKey, generateRecoveryKey } from '../utils/cryptoUt
 
 const AuthContext = createContext();
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || 'https://remarkable-tenderness-production-139f.up.railway.app/api';
 
 // Local User Registry helper functions for offline password verification
 const getLocalRegistry = () => {
